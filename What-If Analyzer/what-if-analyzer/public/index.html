@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"What If" Analyzer</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../src/styles/styles.css">
+</head>
+
+<body>
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <h1 class="text-4xl font-bold text-center mb-8 font-['Orbitron'] neon-text">What if..</h1>
+        
+        <!-- Chat Container -->
+        <div class="cyber-border rounded-lg p-4 mb-4">
+            <div id="chatContainer" class="chat-container mb-4">
+                <div class="ai-message message">
+                    Welcome to the "What If" Analyzer! Share your hypothetical scenario and let's explore the possibilities together. Try starting with "What if..."
+                </div>
+            </div>
+
+            <!-- Input Form -->
+            <div class="flex gap-4">
+                <input type="text" id="userInput" class="bg-transparent cyber-border p-2 rounded flex-grow" 
+                       placeholder="Enter your 'What if' scenario..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()" class="cyber-button px-6 py-2 rounded">
+                    <i class="bi bi-send"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../src/js/script.js" defer></script>
+</body>
+</html>
